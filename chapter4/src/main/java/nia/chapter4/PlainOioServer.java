@@ -19,7 +19,7 @@ public class PlainOioServer {
                 final Socket clientSocket = socket.accept();
                 System.out.println(
                         "Accepted connection from " + clientSocket);
-                new Thread(new Runnable() {
+                new Thread(new Runnable() { // use multiple thread
                     @Override
                     public void run() {
                         OutputStream out;
