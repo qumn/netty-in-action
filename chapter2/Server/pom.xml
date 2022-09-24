@@ -34,7 +34,7 @@
                     </execution>
                 </executions>
                 <configuration>
-                    <mainClass>nia.chapter2.echoserver.EchoServer</mainClass>
+                    <mainClass>nio.chapter2.echoserver.EchoServer</mainClass>
                     <arguments>
                         <argument>${echo-server.port}</argument>
                     </arguments>

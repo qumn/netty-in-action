@@ -16,7 +16,7 @@
         <profile>
             <id>LogEventBroadcaster</id>
             <properties>
-                <mainClass>nia.chapter13.LogEventBroadcaster</mainClass>
+                <mainClass>nio.chapter13.LogEventBroadcaster</mainClass>
                 <port>9999</port>
                 <logfile>/var/log/messages</logfile>
             </properties>
@@ -43,7 +43,7 @@
         <profile>
             <id>LogEventMonitor</id>
             <properties>
-                <mainClass>nia.chapter13.LogEventMonitor</mainClass>
+                <mainClass>nio.chapter13.LogEventMonitor</mainClass>
                 <port>9999</port>
             </properties>
             <build>

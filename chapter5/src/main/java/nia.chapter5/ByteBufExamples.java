@@ -1,4 +1,4 @@
-package nia.chapter5;
+package nio.chapter5;
 
 import io.netty.buffer.*;
 import io.netty.channel.Channel;

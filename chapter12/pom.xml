@@ -25,7 +25,7 @@
         <profile>
             <id>ChatServer</id>
             <properties>
-                <mainClass>nia.chapter12.ChatServer</mainClass>
+                <mainClass>nio.chapter12.ChatServer</mainClass>
                 <port>8888</port>
             </properties>
             <build>
@@ -50,7 +50,7 @@
         <profile>
             <id>SecureChatServer</id>
             <properties>
-                <mainClass>nia.chapter12.SecureChatServer</mainClass>
+                <mainClass>nio.chapter12.SecureChatServer</mainClass>
                 <port>8888</port>
             </properties>
             <build>

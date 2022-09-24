@@ -27,7 +27,7 @@
                     </execution>
                 </executions>
                 <configuration>
-                    <mainClass>nia.chapter2.echoclient.EchoClient</mainClass>
+                    <mainClass>nio.chapter2.echoclient.EchoClient</mainClass>
                     <arguments>
                         <argument>${echo-server.hostname}</argument>
                         <argument>${echo-server.port}</argument>
