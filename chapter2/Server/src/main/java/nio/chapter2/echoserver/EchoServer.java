@@ -9,6 +9,7 @@ import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
 
 import java.net.InetSocketAddress;
+import java.util.concurrent.TimeUnit;
 
 /**
  * Listing 2.2 EchoServer class
@@ -24,13 +25,13 @@ public class EchoServer {
 
     public static void main(String[] args)
         throws Exception {
-        if (args.length != 1) {
-            System.err.println("Usage: " + EchoServer.class.getSimpleName() +
-                " <port>"
-            );
-            return;
-        }
-        int port = Integer.parseInt(args[0]);
+        //if (args.length != 1) {
+        //    System.err.println("Usage: " + EchoServer.class.getSimpleName() +
+        //        " <port>"
+        //    );
+        //    return;
+        //}
+        int port = Integer.parseInt("8080");
         new EchoServer(port).start();
     }
 

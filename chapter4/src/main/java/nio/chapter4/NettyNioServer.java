@@ -10,6 +10,7 @@ import io.netty.channel.socket.nio.NioServerSocketChannel;
 
 import java.net.InetSocketAddress;
 import java.nio.charset.Charset;
+import java.util.concurrent.TimeUnit;
 
 /**
  * Listing 4.4 Asynchronous networking with Netty
@@ -30,12 +31,12 @@ public class NettyNioServer {
                                       @Override
                                       public void initChannel(SocketChannel ch)
                                               throws Exception {
-                                              ch.pipeline().addLast(
+                                          ch.pipeline().addLast(
                                                   new ChannelInboundHandlerAdapter() {
                                                       @Override
                                                       public void channelActive(
                                                               ChannelHandlerContext ctx) throws Exception {
-                                                                ctx.writeAndFlush(buf.duplicate())
+                                                          ctx.writeAndFlush(buf.duplicate())
                                                                   .addListener(
                                                                           ChannelFutureListener.CLOSE);
                                                       }

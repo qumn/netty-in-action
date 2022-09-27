@@ -20,6 +20,11 @@ import java.net.InetSocketAddress;
  * @author <a href="mailto:mawolfthal@gmail.com">Marvin Wolfthal</a>
  */
 public class BootstrapSharingEventLoopGroup {
+    public static void main(String[] args) {
+        BootstrapSharingEventLoopGroup bootstrap = new BootstrapSharingEventLoopGroup();
+        bootstrap.bootstrap();
+
+    }
 
     /**
      * Listing 8.5 Bootstrapping a server
@@ -46,7 +51,7 @@ public class BootstrapSharingEventLoopGroup {
                             });
                         bootstrap.group(ctx.channel().eventLoop());
                         connectFuture = bootstrap.connect(
-                            new InetSocketAddress("www.manning.com", 80));
+                            new InetSocketAddress("127.0.0.1", 8888));
                     }
 
                     @Override
